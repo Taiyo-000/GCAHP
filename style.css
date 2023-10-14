@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* ページ全体のスタイル */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* ヘッダーセクション */
+header {
+  background-color: #1E90FF;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00BFFF;
+}
+
+.user-actions button {
+  background-color: #00BFFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.user-actions button:hover {
+  background-color: #1E90FF;
+}
+
+/* 案件一覧セクション */
+.job-listings {
+  padding: 40px;
+}
+
+.job-listing {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 30px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%; /* 幅を30%に設定 */
+  float: left; /* 左寄せ */
+  margin-right: 20px; /* 右側に余白を設定 */
+  clear: both; /* 現在の行で左右の浮動要素をクリア */
+}
+
+.job-listing h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.job-listing p {
+  margin: 10px 0;
+}
+
+.job-listing button.show-details-button {
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.job-listing .job-details {
+  display: none; /* 詳細情報を非表示 */
+  margin-top: 20px;
+}
+
+
+/* 開発言語のデザイン */
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.language {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 12px; /* パディングを大きくし、より目立つデザインに */
+  margin: 5px 15px; /* 左右の余白を大きくし、開発言語同士の間隔を広げる */
+  border-radius: 20px; /* 角丸にすることでよりキャッチーに */
+  font-weight: bold; /* フォントを太字にすることで強調 */
+}
+
+
+/* モーダルウィンドウスタイル */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 10%;
+  bottom: 0;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  z-index: 999;
+  transition: opacity 0.3s; /* モーダルのフェードイン/フェードアウトアニメーション */
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: -100%; /* 初期状態では画面外に移動 */
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  width: 40%;
+  height: 80%;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3); /* ページの右にスライドするエフェクト */
+  overflow-y: auto;
+  margin: 5%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* モーダル表示時にjob-listingのwidthを狭める */
+.job-listing.show-modal {
+  position: relative;
+  width: 40%; /* 幅を狭める */
+}
+
+
+/* お問い合わせフォームセクション */
+.contact-section {
+  clear: both; /* 前の浮動要素の下に配置 */
+}
+
+.contact-form {
+  background-color: #3498db;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #2071a1;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #155a8a;
+}
+
+/* フッターセクション */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.contact-info, .site-links {
+  margin: 20px 0;
+}
+
+.site-links a {
+  color: #1E90FF;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+.site-links a:hover {
+  color: #00BFFF;
+}
+
+/* サイトの信頼性を高める要素 */
+.trust-elements {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* レスポンシブデザインの調整は必要です。 */
+
