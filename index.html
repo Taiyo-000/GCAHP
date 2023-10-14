@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ITフリーランス案件紹介</title>
+</head>
+<body>
+    <!-- ヘッダーセクション -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="サイトのロゴ">
+            <h1>ITフリーランス案件紹介</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">案件一覧</a></li>
+                <li><a href="#">フリーランスプロフィール</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button>ログイン</button>
+            <button>サインアップ</button>
+        </div>
+    </header>
+
+   <!-- 案件一覧セクション -->
+    <section class="job-listings">
+      <h2>利用可能な案件</h2>
+      <div class="job-listing">
+          <h3>案件タイトル1</h3>
+          <div class="languages">
+            <p class="language">HTML</p>
+            <p class="language">CSS</p>
+            <p class="language">JavaScript</p>
+          </div>
+          <p>ポジション</p>
+          <p>案件の説明や詳細情報がここに入ります。</p>
+          <p>予算: $1000</p>
+          <p>スキル要件: 技能1, 技能2, 技能3</p>
+          <button class="show-details-button">詳細を見る</button>
+      </div>
+      <div class="job-listing">
+          <h3>案件タイトル2</h3>
+          <div class="languages">
+            <p class="language">HTML</p>
+            <p class="language">CSS</p>
+            <p class="language">JavaScript</p>
+          </div>
+          <p>ポジション</p>
+          <p>案件の説明や詳細情報がここに入ります。</p>
+          <p>予算: $1000</p>
+          <p>スキル要件: 技能1, 技能2, 技能3</p>
+          <button class="show-details-button">詳細を見る</button>
+        </div>
+        <div class="job-listing">
+          <h3>案件タイトル3</h3>
+          <div class="languages">
+            <p class="language">HTML</p>
+            <p class="language">CSS</p>
+            <p class="language">JavaScript</p>
+          </div>
+          <p>ポジション</p>
+          <p>案件の説明や詳細情報がここに入ります。</p>
+          <p>予算: $1000</p>
+          <p>スキル要件: 技能1, 技能2, 技能3</p>
+          <button class="show-details-button">詳細を見る</button>
+      </div>
+      <!-- 他の案件も同様に繰り返し表示 -->
+    </section>
+
+    <!-- ...（他のセクションは省略） -->
+
+    <!-- 詳細モーダル -->
+    <div class="modal">
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p>詳細な情報がここに表示されます。</p>
+          <p>詳細な情報の内容...</p>
+          <p>詳細な情報の内容...</p>
+          <p>詳細な情報の内容...</p>
+          <p>詳細な情報の内容...</p>
+          <p>詳細な情報の内容...</p>
+          <p>詳細な情報の内容...</p>
+          <p>詳細な情報の内容...</p>
+          <p>詳細な情報の内容...</p>
+      </div>
+    </div>
+
+  <script src="script.js"> </script>
+
+
+    <!-- お問い合わせフォームセクション -->
+  <div class="contact-section">
+    <section class="contact-form">
+        <h2>お問い合わせ</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">お問い合わせ内容</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">送信</button>
+        </form>
+    </section>
+  </div>
+
+    <!-- フッターセクション -->
+    <footer>
+        <div class="contact-info">
+            <p>お問い合わせ: example@example.com</p>
+            <p>電話番号: 123-456-7890</p>
+        </div>
+        <div class="site-links">
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">利用規約</a>
+            <a href="#">よくある質問</a>
+        </div>
+    </footer>
+
+    <!-- サイトの信頼性を高める要素 -->
+    <section class="trust-elements">
+        <p>当サイトは信頼性のある認証を受けています。</p>
+        <p>セキュリティ対策についてはこちらで詳細をご覧いただけます。</p>
+    </section>
+</body>
+</html>
